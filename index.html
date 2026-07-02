@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Advanced Image Gallery</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>Advanced Image Gallery</h1>
+
+<input type="text" id="search" placeholder="Search images...">
+
+<div class="filters">
+    <button onclick="filterImages('all')">All</button>
+    <button onclick="filterImages('nature')">Nature</button>
+    <button onclick="filterImages('city')">City</button>
+    <button onclick="filterImages('animal')">Animal</button>
+</div>
+
+<div class="gallery" id="gallery">
+
+    <img src="https://picsum.photos/id/1015/400/300" data-category="nature" alt="Mountain">
+    <img src="https://picsum.photos/id/1043/400/300" data-category="nature" alt="Forest">
+    <img src="https://picsum.photos/id/1069/400/300" data-category="city" alt="City">
+    <img src="https://picsum.photos/id/1076/400/300" data-category="city" alt="Buildings">
+    <img src="https://picsum.photos/id/237/400/300" data-category="animal" alt="Dog">
+    <img src="https://picsum.photos/id/433/400/300" data-category="animal" alt="Cat">
+
+</div>
+
+<div id="lightbox">
+    <span id="close">&times;</span>
+
+    <button id="prev">❮</button>
+
+    <img id="lightbox-img">
+
+    <button id="next">❯</button>
+
+    <p id="counter"></p>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
